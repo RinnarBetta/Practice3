@@ -8,8 +8,13 @@ public class Main {
         double C=7;
 
         double Celsius = convFToCelsius(F);
+        double Fahrenheit = convCtoFahrenheit(C);
         System.out.println("Resul is " + Celsius + "C");
+        System.out.println("Resul is " + Fahrenheit + "F");
         }
     private static double convFToCelsius(double F){ return ((F-32)*5/9);
+    }
+    private static double convCtoFahrenheit(double C) {
+        return ((C *9/5) +32);
     }
     }
